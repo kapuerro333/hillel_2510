@@ -22,7 +22,7 @@ people_records = [
   ('Ethan', 'Anderson', 36, 'Product Manager', 'Phoenix')
 ]
 people_records.insert(0, ('Yurii', 'Мoskalchuk', '29', 'QA', 'Vinnytsia'))
-people_records[1] = people_records[5]
+people_records[1], people_records[5] = people_records[5], people_records[1]
 print(people_records)
 
 filtered_people = all(int(people_records[i][2]) >= 30 for i in [6, 10, 13])
